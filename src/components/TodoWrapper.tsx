@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import TodoForm from './TodoForm';
 import Todo from '../models/Todo'
+import TodoList from './TodoList';
 
 
 function TodoWrapper(){
@@ -23,7 +24,9 @@ function TodoWrapper(){
 
   return (
     <div>
+        <h1>Todos</h1>
         <TodoForm addTodo={addTodo} />
+        <TodoList todos={todos} toggleTodo={toggleTodo}/>
     </div>
   )
 }
