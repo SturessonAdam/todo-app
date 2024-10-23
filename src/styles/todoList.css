@@ -1,0 +1,14 @@
+.todo-item {
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-item.completed {
+    background-color: #d3ffd3;
+    /*text-decoration: line-through;*/
+  }
+  
+ 
