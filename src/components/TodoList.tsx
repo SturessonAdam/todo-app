@@ -4,9 +4,10 @@ import '../styles/todoList.css'
 type TodoListProps = {
     todos: Todo[];
     toggleTodo: (id: number) => void;
+    deleteTodo: (id: number) => void;
 }
 
-function TodoList({ todos, toggleTodo } : TodoListProps) {
+function TodoList({ todos, toggleTodo, deleteTodo } : TodoListProps) {
 
   return (
     <div>
@@ -17,6 +18,9 @@ function TodoList({ todos, toggleTodo } : TodoListProps) {
           onClick={() => toggleTodo(todo.id)}
         >
           {todo.text}
+          <button onClick={(e) => {
+            e.stopPropagation();
+            deleteTodo(todo.id)}}>Delete</button>
         </div>
       ))}
     </div>

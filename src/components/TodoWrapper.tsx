@@ -23,12 +23,16 @@ function TodoWrapper(){
         ));
     };
 
+    const deleteTodo = (id: number) => {
+        setTodos(todos.filter(todo => todo.id !== id));
+    };
+
   return (
     <div className='todo-wrapper'>
         <div className='todo-container'>
             <h1>Todos</h1>
             <TodoForm addTodo={addTodo} />
-            <TodoList todos={todos} toggleTodo={toggleTodo}/>
+            <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
         </div>
     </div>
   )
