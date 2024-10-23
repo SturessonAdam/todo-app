@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import TodoForm from './TodoForm';
 import Todo from '../models/Todo'
 import TodoList from './TodoList';
