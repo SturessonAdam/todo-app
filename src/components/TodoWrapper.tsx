@@ -23,7 +23,7 @@ function TodoWrapper(){
     };
 
   return (
-    <div>
+    <div className='todo-wrapper'>
         <h1>Todos</h1>
         <TodoForm addTodo={addTodo} />
         <TodoList todos={todos} toggleTodo={toggleTodo}/>
