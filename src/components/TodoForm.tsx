@@ -16,9 +16,10 @@ function TodoForm({ addTodo } : TodoProps) {
     };
 
   return (
-    <div>
+    <div className='form-wrapper'>
         <form onSubmit={handleSubmit}>
             <input
+            className='todo-form'
             type="text" 
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
