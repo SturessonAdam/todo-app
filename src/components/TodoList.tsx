@@ -18,9 +18,11 @@ function TodoList({ todos, toggleTodo, deleteTodo } : TodoListProps) {
           onClick={() => toggleTodo(todo.id)}
         >
           {todo.text}
-          <button onClick={(e) => {
+          <button className='delete-button' onClick={(e) => {
             e.stopPropagation();
-            deleteTodo(todo.id)}}>Delete</button>
+            deleteTodo(todo.id)}}>
+            <i className="fas fa-trash-alt"></i>
+            </button>
         </div>
       ))}
     </div>

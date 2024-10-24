@@ -1,5 +1,8 @@
 .todo-item {
-    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
     border-bottom: 2px solid #ccc;
@@ -10,5 +13,15 @@
     background-color: #d3ffd3;
     /*text-decoration: line-through;*/
   }
+
+  .delete-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  button .fa-trash-alt {
+    color: red; 
+}
   
  
