@@ -9,6 +9,7 @@
     height: 25px;
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    outline-color: rgba(1, 7, 1, 0.535);
 }
 
 button .fa-solid {
