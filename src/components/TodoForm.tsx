@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/todoForm.css'
 
 type TodoProps = {
     addTodo: (text: string) => void;
@@ -25,7 +26,9 @@ function TodoForm({ addTodo } : TodoProps) {
             onChange={(e) => setInputValue(e.target.value)}
             placeholder='Add a new todo'
             />
-            <button type='submit'>Add</button>
+            <button type='submit'>
+            <i className="fa-solid fa-check"></i>
+            </button>
         </form>
     </div>
   )
