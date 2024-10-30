@@ -1,6 +1,4 @@
-import React from 'react'
 import TodoWrapper from './TodoWrapper'
-import { mount } from 'cypress/react';
 /// <reference path="../support/component.ts" />
 
 
