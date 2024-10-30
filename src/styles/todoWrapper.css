@@ -6,20 +6,51 @@
 }
 
 .todo-container {
-    background-color: #ffffff62;
+    background-color: #6f66ee62;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.1);
     width: 300px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  }
+}
 
-  .todo-container h1 {
-        font-family: "Cedarville Cursive", cursive;
-        font-weight: 400;
-        font-style: normal;    
-  }
+.todo-container h1 {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #00aaff;
+    text-shadow: 0 0 8px #003cff, 0 0 16px #003cff, 0 0 24px #003cff;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+        
+    animation: typing 4s steps(12, end) forwards, neon-flicker 2s infinite alternate ease-in-out;
+}
+    
+@keyframes typing {
+    from {
+        width: 0;
+        margin-left: 50%;
+        transform: translateX(0);
+    }
+    to {
+        width: 100%;
+        margin-left: 0;
+        transform: translateX(0);
+    }
+}
+    
+@keyframes neon-flicker {
+    from {
+        text-shadow: 0 0 8px #003cff, 0 0 16px #003cff, 0 0 24px #003cff, 0 0 32px #003cff;
+    }
+    to {
+        text-shadow: 0 0 4px #005ccc, 0 0 8px #005ccc, 0 0 12px #005ccc, 0 0 16px #005ccc;
+    }
+}
+ 
