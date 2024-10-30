@@ -1,4 +1,5 @@
 .app {
     height: 100vh;
-    background: radial-gradient(circle at 50% 40%, rgba(158, 210, 183, 0.639) 10%, rgba(0, 0, 0, 0.553) 90%);
+    background: radial-gradient(circle at 50% 40%, #1a1a2e 10%, #0f3460 90%);
+    color: #ffffff;
 }

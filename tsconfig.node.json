@@ -16,7 +16,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Cypress types */
+    "types": ["cypress"]
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "**/*.cy.ts", "cypress/support/component.ts"]
 }

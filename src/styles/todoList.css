@@ -5,19 +5,23 @@
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
-    border-bottom: 2px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #2e4c6d;
+    background-color: #23395d;
+    color: rgba(255, 255, 255, 0.654);
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.1);
   }
   
   .todo-item.completed {
-    background-color: #d3ffd3;
-    /*text-decoration: line-through;*/
+    background-color: #27496d;
+    color: #a9d6e5;
+    text-decoration: line-through;
   }
 
   .delete-button {
     border: none;
     background: none;
     cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 75, 92, 0.3);
   }
 
   button .fa-trash-alt {
